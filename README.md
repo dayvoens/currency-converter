@@ -18,5 +18,5 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone [https://github.com/твой_ник/имя_репозитория.git](https://github.com/твой_ник/имя_репозитория.git)
+   git clone (https://github.com/dayvoens/currency-converter.git)
    cd имя_репозитория
