@@ -19,4 +19,4 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/dayvoens/currency-converter.git
-   cd имя_репозитория
+   cd currency-converter
