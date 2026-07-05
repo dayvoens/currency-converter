@@ -20,3 +20,7 @@
    ```bash
    git clone https://github.com/dayvoens/currency-converter.git
    cd currency-converter
+
+   pip install aiogram aiohttp python-dotenv
+
+   python bot.py
