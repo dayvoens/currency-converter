@@ -14,13 +14,35 @@
 * Быстрое переключение направлений обмена (прямой и обратный курс).
 * Парсинг актуальных данных о курсах через внешнее API без задержек.
 
+## 📁 Структура проекта
+```
+currency-converter/
+├── bot.py           # точка входа: создание бота и запуск polling
+├── config.py        # настройки: токен из .env, URL API ЦБ
+├── cbu_api.py       # получение курсов с сайта ЦБ РУз (cbu.uz)
+├── handlers.py      # клавиатура и обработчики сообщений
+└── requirements.txt # зависимости
+```
+
 ## 📦 Как запустить локально
 
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/dayvoens/currency-converter.git
    cd currency-converter
+   ```
 
-   pip install aiogram aiohttp python-dotenv
+2. Установите зависимости:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+3. Создайте файл `.env` в корне проекта и укажите токен бота от [@BotFather](https://t.me/BotFather):
+   ```
+   BOT_TOKEN=ваш_токен
+   ```
+
+4. Запустите бота:
+   ```bash
    python bot.py
+   ```
